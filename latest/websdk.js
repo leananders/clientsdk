@@ -52,7 +52,7 @@ src='" + webSdkScriptUrl.substring(0, webSdkScriptUrl.length - 2) + "html'></ifr
     this.callback = javaScriptObject.callback;
     javaScriptObject.callback = undefined;
     let e = this.setFrameHeight();
-    e.style.display = 'block';
+    e.style.display = 'flex';
     e.contentWindow.postMessage({lean$m: method, argument: javaScriptObject}, '*');
   };
 }
